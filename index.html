@@ -3,39 +3,295 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Evgeniia Zhavoronkova - Junior Frontend Developer</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__container container">
-      <div class="header__nav">
-        <div class="header__burger-btn">span</div>
-        <nav class="nav__body">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="" class="nav__link">About Me</a>
+  <aside class="sidebar">
+    <div class="sidebar__body">
+      <div class="sidebar__top flex">
+        <div class="sidebar__image"></div>
+        <div class="sidebar__main">
+          <h1 class="sidebar__name fs-title- fw-500">Evgeniia Zhavoronkova</h1>
+          <h2 class="sidebar__position fs-title-s">Junior Frontend Developer</h2>
+        </div>
+      </div>
+      <div class="sidebar__info">
+        <div class="sidebar__text">
+            I'm niewby Frontend Developer based in Oslo, Norway.
+            I have knowledge of HTML5, CSS3 (SAAS), Javascript, Webpack, Gulp.
+            In addition to my technical skills, I bring along professional work experience as an Brand Manager where I learned about ....
+        </div>
+        <div class="sidebar__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              location
             </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Skills</a>
+            <li class="contacts__item">
+              phone
             </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Education</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Work Experience</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Contact</a>
+            <li class="contacts__item">
+              email
             </li>
           </ul>
-        </nav>
+        </div>
+        <div class="sidebar__social social">
+          <ul class="social__list"></ul>
+        </div>
       </div>
     </div>
-  </header>
-  <main class="main"></main>
-  <footer class="footer"></footer>
+  </aside>
+  <div class="main">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__body">
+          <nav class="nav__body">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About me</a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">Skills</a>
+              </li>
+              <li class="nav__item">
+                <a href="#projects" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#education" class="nav__link">Education</a>
+              </li>
+              <li class="nav__item">
+                <a href="#experience" class="nav__link">Work Experience</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="about" id="about">
+      <div class="about__container container">
+        <div class="about__body">
+          <h2 class="about__title section-title fs-title-m text-green"><span>About me</span></h2>
+          <p class="about__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eaque corporis ullam, repellendus saepe molestiae ab alias, quibusdam aspernatur obcaecati a quis vel magni dolor aperiam. Ratione pariatur sunt tenetur. Omnis magnam dolore deserunt sunt nostrum neque, aliquid ipsam, hic voluptatibus labore quas eius, cum at vel itaque excepturi possimus?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills__container container">
+        <div class="skills__body">
+          <h2 class="skills__title section-title text-green fs-title-m"><span>Skills</span></h2>
+          <h3 class="skills__subtitle">Technologies and Tools</h3>
+          <ul class="skills__list">
+            <!-- HTML, CSS, JavaScript, Figma, Webpack 
+            Learning Typescript, React, Vite -->
+            <li class="skills__item skills-item">
+              <div class="skills-item__wrapper">
+                <div class="skills-item__img">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon icon-tabler icon-tabler-brand-html5" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="3.25 3.25 17.5 18"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path><path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+                  </svg>
+              </div>
+              <div class="skills-item__text">HTML</div>
+              </div>
+            </li>
+            <li class="skills__item skills-item">
+              <div class="skills-item__wrapper">
+                <div class="skills-item__img">
+                <svg viewBox="0 0 101.7 84" width="32" height="32"><path d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z"></path></svg>
+              </div>
+              <div class="skills-item__text">BEM</div>
+              </div>  
+            </li>
+            <li class="skills__item skills-item">
+              <div class="skills-item__wrapper">
+                <div class="skills-item__img">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="3.25 3.25 17.5 18"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path><path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path></svg>
+              </div>
+              <div class="skills-item__text">CSS3</div>
+              </div>
+            </li>
+            <li class="skills__item skills-item">
+              <div class="skills-item__wrapper">
+                 <div class="skills-item__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" x="0px" y="0px" viewBox="0 6.26 50 37.48"><path d="M43.03,27.802c-1.747,0.009-3.261,0.429-4.53,1.054c-0.464-0.926-0.934-1.741-1.013-2.347 c-0.092-0.707-0.199-1.129-0.088-1.972c0.111-0.843,0.599-2.036,0.591-2.125c-0.007-0.089-0.109-0.518-1.117-0.526 c-1.008-0.007-1.87,0.194-1.972,0.46c-0.102,0.266-0.296,0.865-0.416,1.49c-0.177,0.914-2.012,4.174-3.055,5.879 c-0.341-0.666-0.631-1.252-0.691-1.716c-0.092-0.707-0.199-1.129-0.088-1.972c0.111-0.843,0.599-2.036,0.591-2.125 c-0.007-0.089-0.109-0.518-1.117-0.526c-1.008-0.007-1.87,0.194-1.972,0.46c-0.102,0.266-0.21,0.888-0.416,1.49 c-0.207,0.602-2.647,6.039-3.286,7.448c-0.326,0.718-0.609,1.295-0.809,1.689c-0.001-0.001-0.001-0.002-0.001-0.002 s-0.012,0.026-0.034,0.071c-0.171,0.335-0.273,0.521-0.273,0.521s0.001,0.003,0.003,0.007c-0.136,0.246-0.281,0.475-0.353,0.475 c-0.05,0-0.151-0.656,0.022-1.555c0.363-1.886,1.235-4.828,1.227-4.929c-0.004-0.052,0.162-0.564-0.57-0.833 c-0.711-0.26-0.965,0.174-1.03,0.175c-0.063,0.001-0.11,0.153-0.11,0.153s0.793-3.308-1.512-3.308c-1.44,0-3.436,1.576-4.42,3.004 c-0.62,0.338-1.948,1.063-3.357,1.837c-0.541,0.297-1.093,0.601-1.617,0.89c-0.036-0.039-0.071-0.079-0.108-0.118 c-2.794-2.981-7.958-5.089-7.739-9.096c0.08-1.457,0.586-5.293,9.924-9.946c7.649-3.812,13.773-2.763,14.831-0.438 c1.512,3.321-3.273,9.494-11.216,10.384c-3.027,0.339-4.62-0.834-5.017-1.271c-0.417-0.46-0.479-0.481-0.635-0.394 c-0.254,0.141-0.093,0.547,0,0.789c0.237,0.617,1.21,1.712,2.87,2.256c1.46,0.479,5.013,0.742,9.311-0.92 c4.813-1.862,8.571-7.041,7.468-11.37c-1.123-4.403-8.423-5.85-15.332-3.396c-4.112,1.461-8.563,3.754-11.764,6.747 c-3.806,3.56-4.412,6.658-4.162,7.952c0.889,4.6,7.228,7.595,9.767,9.815c-0.125,0.069-0.243,0.134-0.35,0.193 c-1.273,0.63-6.105,3.159-7.314,5.831c-1.371,3.031,0.218,5.206,1.271,5.499c3.26,0.907,6.606-0.725,8.404-3.407 c1.798-2.681,1.578-6.172,0.753-7.766c-0.01-0.02-0.022-0.039-0.032-0.059c0.329-0.195,0.664-0.392,0.996-0.587 c0.648-0.38,1.284-0.735,1.836-1.036c-0.309,0.846-0.535,1.86-0.653,3.325c-0.138,1.721,0.567,3.945,1.49,4.82 c0.406,0.385,0.895,0.394,1.205,0.394c1.074,0,1.564-0.893,2.103-1.95c0.662-1.296,1.249-2.804,1.249-2.804 s-0.737,4.075,1.271,4.075c0.731,0,1.467-0.949,1.795-1.432c0.001,0.005,0.001,0.008,0.001,0.008s0.019-0.031,0.056-0.095 c0.076-0.116,0.119-0.19,0.119-0.19s0.002-0.008,0.004-0.021c0.294-0.51,0.946-1.674,1.924-3.594 c1.263-2.48,2.475-5.586,2.475-5.586s0.113,0.76,0.482,2.015c0.217,0.739,0.679,1.556,1.043,2.339 c-0.293,0.407-0.473,0.64-0.473,0.64s0.002,0.004,0.005,0.012c-0.234,0.311-0.497,0.646-0.772,0.974 c-0.997,1.188-2.185,2.544-2.344,2.936c-0.187,0.461-0.143,0.801,0.219,1.073c0.264,0.199,0.735,0.23,1.227,0.197 c0.896-0.06,1.527-0.283,1.838-0.418c0.485-0.171,1.05-0.441,1.58-0.831c0.978-0.719,1.568-1.748,1.512-3.111 c-0.031-0.751-0.271-1.495-0.574-2.198c0.089-0.128,0.178-0.256,0.267-0.387c1.542-2.255,2.738-4.732,2.738-4.732 s0.113,0.76,0.482,2.015c0.187,0.636,0.556,1.329,0.887,2.009c-1.45,1.178-2.349,2.547-2.662,3.445 c-0.577,1.661-0.125,2.414,0.723,2.585c0.384,0.078,0.927-0.098,1.335-0.271c0.508-0.168,1.118-0.449,1.688-0.868 c0.978-0.719,1.919-1.726,1.862-3.089c-0.026-0.62-0.194-1.236-0.422-1.828c1.229-0.512,2.821-0.797,4.848-0.56 c4.349,0.508,5.202,3.223,5.039,4.359c-0.163,1.137-1.075,1.761-1.38,1.95c-0.305,0.189-0.398,0.254-0.372,0.394 c0.037,0.204,0.178,0.196,0.438,0.152c0.358-0.06,2.283-0.924,2.366-3.022C50.102,30.703,47.55,27.778,43.03,27.802z M9.512,39.102 c-1.44,1.571-3.453,2.165-4.316,1.665c-0.932-0.54-0.563-2.854,1.205-4.521c1.077-1.016,2.468-1.952,3.391-2.529 c0.21-0.126,0.518-0.312,0.893-0.537c0.062-0.035,0.097-0.055,0.097-0.055l-0.001-0.002c0.072-0.043,0.147-0.088,0.223-0.134 C11.647,35.363,11.024,37.453,9.512,39.102z M20.005,31.968c-0.502,1.223-1.552,4.352-2.191,4.184 c-0.549-0.144-0.883-2.523-0.11-4.863c0.389-1.178,1.22-2.586,1.709-3.133c0.786-0.879,1.652-1.167,1.862-0.81 C21.544,27.8,20.32,31.201,20.005,31.968z M28.675,36.105c-0.213,0.111-0.408,0.181-0.498,0.127 c-0.067-0.04,0.088-0.186,0.088-0.186s1.084-1.167,1.512-1.698c0.248-0.309,0.537-0.676,0.85-1.086 c0.003,0.041,0.004,0.082,0.004,0.122C30.627,34.782,29.277,35.725,28.675,36.105z M35.354,34.582 c-0.159-0.113-0.132-0.478,0.389-1.614c0.205-0.446,0.672-1.198,1.485-1.916c0.094,0.295,0.152,0.578,0.15,0.842 C37.367,33.653,36.112,34.31,35.354,34.582z"></path>
+                </svg>
+              </div>
+              <div class="skills-item__text">Sass</div>
+              </div>
+            </li>
+            <li class="skills__item skills-item">
+              <div class="skills-item__wrapper">
+                <div class="skills-item__img">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="3.25 3.25 17.5 18"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path><path d="M7.5 8h3v8l-2 -1"></path><path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"></path></svg>
+                </div>
+                <div class="skills-item__text">Javascript</div>
+              </div>
+            </li>
+            <li class="skills__item skills-item">
+              <div class="skills-item__wrapper">
+                <div class="skills-item__img">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" viewBox="1 0.5 13 14">
+                    <path d="m1.5 10.5v-6m0 6 6 3.5m-6-3.5 3.5-1.5m-3.5-4.5 6-3.5m-6 3.5 6 3m0-6.5 6 3.5m-6-3.5v3.5m6 0v6m0-6-6 3m6 3-6 3.5m6-3.5-3.5-1.5m-2.5 5v-6.5m0-3-2.5 1.5v3m2.5-4.5 2.5 1.5v3m-5 0 2.5 1.5 2.5-1.5" stroke="#000"></path>
+                  </svg>
+              </div>
+              <div class="skills-item__text">Webpack</div>
+              </div> 
+            </li>
+            <li class="skills__item skills-item">
+              <div class="skills-item__wrapper">
+                <div class="skills-item__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 92 92"><defs><clipPath id="a"><path d="M0 .113h91.887V92H0Zm0 0"/></clipPath></defs><g clip-path="url(#a)"><path style="stroke:none;fill-rule:nonzero;fill:#100f0d;fill-opacity:1" d="M90.156 41.965 50.036 1.848a5.913 5.913 0 0 0-8.368 0l-8.332 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.043 7.043 0 0 1 1.673 7.277l10.183 10.184a7.026 7.026 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.045 7.045 0 0 1-9.961 0 7.038 7.038 0 0 1-1.532-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.034 7.034 0 0 1 2.308-1.539V33.926a7.001 7.001 0 0 1-2.308-1.535 7.049 7.049 0 0 1-1.516-7.7L29.242 14.273 1.734 41.777a5.918 5.918 0 0 0 0 8.371L41.855 90.27a5.92 5.92 0 0 0 8.368 0l39.933-39.934a5.925 5.925 0 0 0 0-8.371"/></g></svg>
+              </div>
+              <div class="skills-item__text">Git</div>
+              </div>
+            </li>
+            <li class="skills__item skills-item">
+              <div class="skills-item__wrapper">
+                <div class="skills-item__img">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="5.33 1.33 21.33 30.67"><path d="M15.9993 2.66699H11.3327C10.095 2.66699 8.90802 3.15866 8.03285 4.03383C7.15768 4.909 6.66602 6.09598 6.66602 7.33366C6.66602 8.57134 7.15768 9.75832 8.03285 10.6335C8.90802 11.5087 10.095 12.0003 11.3327 12.0003H15.9993M15.9993 2.66699V12.0003M15.9993 2.66699H20.666C21.2789 2.66699 21.8857 2.7877 22.4519 3.02222C23.0181 3.25674 23.5325 3.60049 23.9658 4.03383C24.3992 4.46717 24.7429 4.98162 24.9775 5.5478C25.212 6.11399 25.3327 6.72082 25.3327 7.33366C25.3327 7.94649 25.212 8.55333 24.9775 9.11952C24.7429 9.6857 24.3992 10.2002 23.9658 10.6335C23.5325 11.0668 23.0181 11.4106 22.4519 11.6451C21.8857 11.8796 21.2789 12.0003 20.666 12.0003H15.9993" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.3327 21.3333C10.095 21.3333 8.90802 21.825 8.03285 22.7002C7.15768 23.5753 6.66602 24.7623 6.66602 26C6.66602 27.2377 7.15768 28.4247 8.03285 29.2998C8.90802 30.175 10.095 30.6667 11.3327 30.6667C12.5704 30.6667 13.7573 30.175 14.6325 29.2998C15.5077 28.4247 15.9993 27.2377 15.9993 26V21.3333M11.3327 21.3333H15.9993M11.3327 21.3333C10.095 21.3333 8.90802 20.8417 8.03285 19.9665C7.15768 19.0913 6.66602 17.9043 6.66602 16.6667C6.66602 15.429 7.15768 14.242 8.03285 13.3668C8.90802 12.4917 10.095 12 11.3327 12H15.9993V21.3333M15.9993 16.6667C15.9993 16.0538 16.1201 15.447 16.3546 14.8808C16.5891 14.3146 16.9328 13.8002 17.3662 13.3668C17.7995 12.9335 18.314 12.5898 18.8802 12.3552C19.4463 12.1207 20.0532 12 20.666 12C21.2789 12 21.8857 12.1207 22.4519 12.3552C23.0181 12.5898 23.5325 12.9335 23.9658 13.3668C24.3992 13.8002 24.7429 14.3146 24.9775 14.8808C25.212 15.447 25.3327 16.0538 25.3327 16.6667C25.3327 17.2795 25.212 17.8863 24.9775 18.4525C24.7429 19.0187 24.3992 19.5332 23.9658 19.9665C23.5325 20.3998 23.0181 20.7436 22.4519 20.9781C21.8857 21.2126 21.2789 21.3333 20.666 21.3333C20.0532 21.3333 19.4463 21.2126 18.8802 20.9781C18.314 20.7436 17.7995 20.3998 17.3662 19.9665C16.9328 19.5332 16.5891 19.0187 16.3546 18.4525C16.1201 17.8863 15.9993 17.2795 15.9993 16.6667Z" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </div>
+              <div class="skills-item__text">Figma</div>
+              </div>
+            </li>
+          </ul>
+          <h3 class="skills__subtitle">Spoken Languages</h3>
+          <ul class="skills__list languages-list">
+            <li class="skills__item languages__item">
+              <p class="languages__title">English</p>
+              <p class="languages__level">Intermediate</p>
+            </li>
+            <li class="skills__item languages__item">
+              <p class="languages__title">Russian</p>
+              <p class="languages__level">Native</p>
+            </li>
+            <li class="skills__item languages__item">
+              <p class="languages__title">Norvegian</p>
+              <p class="languages__level">Elementary</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="project__container container">
+        <div class="projects__body">
+          <h2 class="about__title section-title text-green fs-title-m"><span>Projects</span></h2>
+          <ul class="projects__list">
+            <li class="projects__item projects-item">
+              <div class="projects-item__img"></div>
+              <div class="projects-item__info">
+                <div class="projects-item__title">Marketing Agency Landing page</div>
+                <div class="projects-item__desc">
+                  <div class="projects-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sequi.</div>
+                  <div class="projects-item__stack stack">
+                    <ul class="stack__list">
+                      <li class="stack__item">
+                        HTML5
+                      </li>
+                      <li class="stack__item">
+                        Sass
+                      </li>
+                      <li class="stack__item">
+                        Vanilla JavaScript
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="projects-item__preview">
+                    <div class="projects-item__demo">View live</div>
+                    <div class="projects-item__repository">Github</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item projects-item">
+              <div class="projects-item__img"></div>
+              <div class="projects-item__info">
+                <div class="projects-item__title">Marketing Agency Landing page</div>
+                <div class="projects-item__desc">
+                  <div class="projects-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sequi.</div>
+                  <div class="projects-item__stack stack">
+                    <ul class="stack__list">
+                      <li class="stack__item">
+                        HTML5
+                      </li>
+                      <li class="stack__item">
+                        Sass
+                      </li>
+                      <li class="stack__item">
+                        Vanilla JavaScript
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="projects-item__preview">
+                    <div class="projects-item__demo">
+                      <a class="projects-item__link" href="">View live</a></div>
+                    <div class="projects-item__repository">
+                      <a  class="projects-item__link" href="">Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item projects-item">
+              <div class="projects-item__img"></div>
+              <div class="projects-item__info">
+                <div class="projects-item__title">Marketing Agency Landing page</div>
+                <div class="projects-item__desc">
+                  <div class="projects-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, sequi.</div>
+                  <div class="projects-item__stack stack">
+                    <ul class="stack__list">
+                      <li class="stack__item">
+                        HTML5
+                      </li>
+                      <li class="stack__item">
+                        Sass
+                      </li>
+                      <li class="stack__item">
+                        Vanilla JavaScript
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="projects-item__preview">
+                    <div class="projects-item__demo">View live</div>
+                    <div class="projects-item__repository">Github</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="education" id="education">
+      <div class="education__container container">
+        <div class="education__body">
+
+        </div>
+      </div>
+    </section>
+    <section class="experience" id="experience">
+      <div class="experience__container container">
+        <div class="experience__body">
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__body">
+          <div class="footer__copy">
+            <p>&copy; 2024 by Evgeniia Zhavoronkova</p>
+          </div>
+          <div class="footer__text fst-italic">
+            <p>My portfolio is coded in Visual Studio Code, deployed with Netlify.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
