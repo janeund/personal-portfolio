@@ -340,6 +340,8 @@ section {
 }
 
 .projects-item {
+  min-height: 23rem;
+  max-height: 23rem;
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 1.5rem;
@@ -364,10 +366,12 @@ section {
 
 .stack {
   margin-bottom: 1.5rem;
+
 }
 
 .stack__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.7rem;
 }
 
@@ -438,12 +442,39 @@ section {
 }
 
 .education-info__title {
+  min-width: 23rem;
+  max-width: 23rem;
   margin-bottom: 0.3rem;
   font-weight: 500;
 }
 
 .education-info__time {
   font-size: 1rem;
+}
+
+.place-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.place-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--green);
+  transition: all 0.3s ease;
+  
+}
+
+.place-link:hover {
+  color: var(--cadet-gray);
+}
+
+.place-link:hover:after {
+  background-color: var(--cadet-gray);
 }
 
 .footer__body {
