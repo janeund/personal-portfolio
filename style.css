@@ -195,13 +195,6 @@ html {
   height: 100%;
 }
 
-.sidebar__info {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; */
-}
-
 .sidebar__top {
   margin-bottom: 2rem;
 }
@@ -218,19 +211,25 @@ html {
 }
 
 .sidebar__text {
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
   font-family: 'Mulish', sans-serif;
   letter-spacing: 0.04rem;
   line-height: 1.3;
 }
 
 .sidebar__image {
-  width: 10rem;
+  margin-bottom: 2rem;
+  
 }
 
 .sidebar__image img {
   border-radius: 1rem;
+  border: 2px solid #ffffff48;
+  width: 10rem;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4); 
 }
 
 .contact-item {
@@ -239,10 +238,38 @@ html {
   gap: 0.9rem;
 }
 
+.mail {
+  position: relative;
+  padding-bottom: 0.12rem;
+  transition: all 0.3s ease;
+}
+
+.mail::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--jet);
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.mail:hover {
+  color: #ffffff;
+}
+.mail:hover::after {
+  background-color: #ffffff;
+}
+
 .contacts {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--jet);
   font-weight: 500;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 
@@ -627,8 +654,6 @@ section {
   font-size: 1rem;
 }
 
-.place {
-}
 
 .place-link {
   position: relative;
