@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* ------------------- */
 /* Custom properties   */
 /* ------------------- */
@@ -219,7 +219,10 @@ html {
 
 .sidebar__text {
   margin-bottom: 1.5rem;
-  flex: 0 1 auto;
+  font-size: 1.2rem;
+  font-family: 'Mulish', sans-serif;
+  letter-spacing: 0.04rem;
+  line-height: 1.3;
 }
 
 .sidebar__image {
@@ -252,6 +255,14 @@ html {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.social-icon path {
+  transition: fill 0.3s ease;
+}
+
+.social__item:hover .social-icon path {
+  fill: white;
 }
 
 .header {
@@ -304,6 +315,12 @@ html {
 .main {
   margin-left: 25rem;
   padding: 3rem;
+}
+
+.about__text {
+  font-family: 'Mulish', sans-serif;
+  letter-spacing: 0.04rem;
+  line-height: 1.3;
 }
 
 .section-title {
