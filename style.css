@@ -351,7 +351,7 @@ html {
 }
 
 .section-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
   font-weight: 500;
 }
 
@@ -561,6 +561,9 @@ section {
 .projects-item__link {
   display: flex;
   align-items: center;
+}
+.experience {
+  margin-bottom: 5rem;
 }
 
 .experience-item:not(:last-child) {
