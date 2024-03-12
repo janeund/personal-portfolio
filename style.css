@@ -178,6 +178,7 @@ html {
 
 .sidebar {
   height: 100%;
+  max-height: 100vh;
   width: 25rem;
   position: fixed;
   z-index: 1;
@@ -186,9 +187,9 @@ html {
   background-color: var(--cadet-light);
   overflow: hidden;
   padding: 2.5rem;
-  -webkit-box-shadow: 6px 0px 15px -5px rgba(0,0,0,0.6);
-  -moz-box-shadow: 6px 0px 15px -5px rgba(0,0,0,0.6);
-  box-shadow: 6px 0px 15px -5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 6px 0px 15px -5px rgba(0,0,0,0.15);
+  -moz-box-shadow: 6px 0px 15px -5px rgba(0,0,0,0.15);
+  box-shadow: 6px 0px 15px -5px rgba(0,0,0,0.15);
 }
 
 .sidebar__body {
@@ -220,12 +221,33 @@ html {
 
 .sidebar__image {
   margin-bottom: 2rem;
-  
+}
+
+
+.sidebar__download-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.sidebar__download {
+  display: inline-flex;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--green);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4); 
+}
+
+.download {
+  font-weight: 500;
 }
 
 .sidebar__image img {
   border-radius: 1rem;
-  border: 2px solid #ffffff48;
   width: 10rem;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
@@ -577,6 +599,16 @@ section {
   column-gap: 5rem;
 }
 
+.experience-item__main {
+  min-width: 14rem;
+  max-width: 20rem;
+}
+
+.experience-item__time {
+  min-width: 5rem;
+  max-width: 10rem;
+}
+
 .experience-item__title {
   margin-bottom: 1rem;
   font-weight: 500;
@@ -627,7 +659,7 @@ section {
 }
 
 .duties-item:before {
-  content: url(arrow-right.svg);
+  content: url(./images/arrow-right.svg);
   position: absolute;
   left: 0;
 }
