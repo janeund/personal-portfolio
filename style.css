@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
 /* ------------------- */
 /* Custom properties   */
 /* ------------------- */
@@ -17,7 +17,7 @@
 
   /* font-sizes */
   --fs-title-xl: 3.5rem;
-  --fs-title-l: 2.8rem;
+  --fs-title-l: 2.7rem;
   --fs-title-m: 1.9rem;
   --fs-title-s: 1.3rem;
   --fs-text-l: 1.562rem;
@@ -65,8 +65,7 @@ ul {
 }
 
 /* make images easier to work with */
-img,
-picutre {
+img {
   max-width: 100%;
   display: block;
 }
@@ -94,7 +93,7 @@ select {
 /* body */
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: var(--fs-text-default);
   color: #000000;
   background-color: var(--platinum); 
@@ -214,7 +213,7 @@ html {
 .sidebar__text {
   margin-bottom: 2rem;
   font-size: 1.1rem;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   letter-spacing: 0.04rem;
   line-height: 1.3;
 }
@@ -236,7 +235,6 @@ html {
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 0.6rem;
-  border: 1px solid var(--green);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4); 
@@ -367,14 +365,14 @@ html {
 }
 
 .about__text {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   letter-spacing: 0.04rem;
   line-height: 1.3;
 }
 
 .section-title {
-  margin-bottom: 1.8rem;
-  font-weight: 500;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .section-title span {
@@ -393,24 +391,24 @@ html {
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
 }
 
 .skills__subtitle,
 .languages__subtitle {
   margin-bottom: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
   /* background-image: radial-gradient(rgb(0, 0, 0), var(--cadet-gray));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 100%;
   background-repeat: repeat; */
-  color: var(--green);
+  color: var(--jet);
 }
 
 .skills__list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
@@ -524,7 +522,7 @@ section {
 
 .projects-item__img {
   width: 100%;
-  min-height: 100%;
+  height: 250px;
   margin-bottom: 1rem;
 }
 
