@@ -532,12 +532,6 @@ section {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 825px) {
-  .projects-item__img {
-    height: 100%;
-  }
-}
-
 .projects-item__title {
   font-weight: 500;
   margin-bottom: 0.6rem;
@@ -783,6 +777,13 @@ section {
     align-self: flex-start;
   }
 }
+
+@media (max-width: 825px) {
+  .projects-item__img {
+    height: 100%;
+  }
+}
+
 @media (max-width: 670px) {
   .sidebar {
     width: 100%;
@@ -860,9 +861,6 @@ section {
   .sidebar__main {
     display: flex;
     column-gap: 2rem;
-  }
-  .sidebar__body {
-    
   }
   .sidebar__top {
     margin-bottom: 1rem;
