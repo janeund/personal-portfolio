@@ -681,6 +681,10 @@ section {
   border-bottom: 1px solid var(--cadet-gray);
 }
 
+.education-info {
+  width: 20rem;
+}
+
 .education-info__title {
   margin-bottom: 0.3rem;
   font-weight: 500;
